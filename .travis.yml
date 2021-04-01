@@ -3,9 +3,3 @@ python:
   - 3.9
 script:
   - pytest
-notifications:
-  email:
-    recipients:
-      -kylecm2@hotmail.com
-    on_success: never
-    on_failure: always
