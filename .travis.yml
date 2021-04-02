@@ -1,7 +1,8 @@
 language: python
 python:
   - 3.9
-install: 
-    - pip install -e .
+before_install:
+  - "pip install -U pip"
+  - "export PYTHONPATH=$PYTHONPATH:$(pwd)"
 script:
   - pytest
