@@ -1,4 +1,4 @@
-class DummyCode:
+class Calculator:
 
     def __init__(self, num1, num2):
         self.num1 = num1
@@ -11,5 +11,5 @@ class DummyCode:
         return self.num1 - self.num2
 
 if __name__ == "__main__":
-    instance = DummyCode(1,2)
+    instance = Calculator(1,2)
     print(instance.add())
