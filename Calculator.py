@@ -5,6 +5,8 @@ class Calculator:
         self.num2 = num2
 
     def add(self):
+        if self.num1 == self.num2:
+            return 0
         return self.num1 + self.num2
 
     def subtract(self):
