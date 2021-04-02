@@ -9,6 +9,6 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
 script:
   - pytest
-  - pip install coverage
-  - coverage run tests.py
+  - pip install pytest-cov
+  - pytest --cov=./
   
