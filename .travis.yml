@@ -3,6 +3,3 @@ python:
   - 3.9
 script:
   - pytest
-before_install:
-      - export PATH="/c/Python38:/c/Python38/Scripts:$PATH"
-      - python -m pip install --upgrade pip wheel
