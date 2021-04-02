@@ -10,4 +10,3 @@ after_success:
 script:
   - pytest
   - pip install coverage
-  - coverage run tests_Calc.py
