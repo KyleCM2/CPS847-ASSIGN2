@@ -4,5 +4,7 @@ python:
 before_install:
   - "pip install -U pip"
   - "export PYTHONPATH=$PYTHONPATH:$(pwd)"
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 script:
   - pytest
