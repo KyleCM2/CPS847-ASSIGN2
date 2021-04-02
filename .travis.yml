@@ -10,3 +10,4 @@ after_success:
 script:
   - pytest
   - pip install coverage
+  
