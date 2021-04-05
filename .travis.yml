@@ -11,4 +11,15 @@ script:
   - pytest
   - pip install pytest-cov
   - pytest --cov=./
+
   
+deploy:
+  provider: elasticbeanstalk
+  access_key_id:
+    secure: "Encrypted <access-key-id>=0yfvJIkgbXRFmgx+JCgKOuHj5hPAA2ihSGD1s7Go"
+  secret_access_key:
+    secure: "Encypted <secret-access-key>=0yfvJIkgbXRFmgx+JCgKOuHj5hPAA2ihSGD1s7Go"
+  region: "us-east-2"
+  app: "Index"
+  env: "testing"
+  bucket_name: "helloworldindex"
