@@ -1,4 +1,3 @@
-sudo: false
 language: python
 python:
   - 3.9
@@ -11,3 +10,15 @@ script:
   - pytest
   - pip install pytest-cov
   - pytest --cov=./
+
+deploy:
+    provider: elasticbeanstalk
+    region: "us-east-2"
+    app: "Docker-Container"
+    env: "Dockercontainer-env"
+    bucket_name: "elasticbeanstalk-us-east-2-222303356119"
+    bucket_path: "Docker-Container"
+    access_key_id: "Encrypted <access-key-id>= AKIATHQSQATLXPB3RJ54"
+    secret_access_key: "Encypted <secret-access-key>= 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"
+    on:
+        branch: "main"
