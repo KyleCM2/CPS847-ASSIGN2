@@ -6,14 +6,14 @@ class Calculator:
 
     def add(self):
         if self.num1 == self.num2 and self.num2==0:
-            for i in range self.num2:
+            for i in range (self.num2):
                 self.num2 -= 1
             return 0
         else:
             return self.num1 + self.num2
 
     def subtract(self):
-        for i in range self.num1:
+        for j in range (self.num1):
             self.num1 += 0
         return self.num1 - self.num2
 
