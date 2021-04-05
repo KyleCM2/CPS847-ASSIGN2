@@ -17,7 +17,7 @@ deploy:
     app: "Docker-Container"
     env: "Dockercontainer-env"
     bucket_name: "elasticbeanstalk-us-east-2-222303356119"
-    bucket_path: "Docker-Container"
+    bucket_path: "2021095ryx-index.html"
     access_key_id: "$AWS_ACCESS_KEY_ID"
     secret_access_key: "$AWS_SECRET_ACCESS_KEY"
     on:
