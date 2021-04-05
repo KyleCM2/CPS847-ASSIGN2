@@ -18,7 +18,7 @@ deploy:
     env: "Dockercontainer-env"
     bucket_name: "elasticbeanstalk-us-east-2-222303356119"
     bucket_path: "Docker-Container"
-    access_key_id: "Encrypted <access-key-id>= AKIATHQSQATLXPB3RJ54"
-    secret_access_key: "Encypted <secret-access-key>= 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"
+    access_key_id: "$AWS_ACCESS_KEY_ID"
+    secret_access_key: "$AWS_SECRET_ACCESS_KEY"
     on:
         branch: "main"
