@@ -11,6 +11,15 @@ script:
   - pip install pytest-cov
   - pytest --cov=./
 
+services:
+    - docker
+    
+before_install:
+    - docker build -t KyleCM2/CPS847-ASSIGN2 .
+
+script:
+    - docker run KyleCM2/CPS847-ASSIGN2 test --allow-env tests/version.test.ts
+
 deploy:
     provider: elasticbeanstalk
     region: "us-east-2"
