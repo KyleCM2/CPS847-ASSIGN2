@@ -18,7 +18,6 @@ deploy:
     app: "indexhelloworld"
     env: "Indexhelloworld-env"
     bucket_name: "cps847hello"
-    bucket_path: "Docker-Container"
     access_key_id: "$AWS_ACCESS_KEY_ID"
     secret_access_key: "$AWS_SECRET_ACCESS_KEY"
     on:
