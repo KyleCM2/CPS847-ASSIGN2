@@ -11,18 +11,13 @@ script:
   - pip install pytest-cov
   - pytest --cov=./
 
-services:
-    - docker
-    
-before_install:
-    - docker build -t nginx_base .
 
 deploy:
     provider: elasticbeanstalk
     region: "us-east-2"
-    app: "Docker-Container"
-    env: "Dockercontainer-env"
-    bucket_name: "elasticbeanstalk-us-east-2-222303356119"
+    app: "indexhelloworld"
+    env: "Indexhelloworld-env"
+    bucket_name: "cps847hello"
     bucket_path: "Docker-Container"
     access_key_id: "$AWS_ACCESS_KEY_ID"
     secret_access_key: "$AWS_SECRET_ACCESS_KEY"
